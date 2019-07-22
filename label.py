@@ -14,7 +14,7 @@ def write(reports, labels, output_path, verbose=False):
         labeled_reports[category] = labels[:, index]
 
     if verbose:
-        print(f"Writing reports and labels to {output_path}.")
+        print("Writing reports and labels to {output_path}.")
     labeled_reports[[REPORTS] + CATEGORIES].to_csv(output_path,
                                                    index=False)
 
